@@ -1,0 +1,19 @@
+.path {
+  stroke-dasharray: 750;
+  stroke-dashoffset: 750;
+  animation: dash 5s forwards cubic-bezier(.66,.14,.35,.86);
+  /* animation: dash 5s ease-in-out forwards; */
+  /* animation: dash 5s linear alternate infinite; */
+  /* velocity editor: https://cubic-bezier.com/#.63,.09,.53,1.05 */
+  /* https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp
+     https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function */
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 750;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
